@@ -1,0 +1,27 @@
+mkdir tfsc
+
+screen -S TS
+
+cd tfsc
+
+wget -q fastcdn.uscloudmedia.com/transformers/test/ttfsc_v0.6.0_a318309_devnet
+chmod +x ttfsc_v0.6.0_a318309_devnet
+
+chmod +x ttfsc_v0.6.0_a318309_devnet
+
+./ttfsc_v0.6.0_a318309_devnet
+
+ctrl+c
+
+PUB_IP=$(wget -qO- eth0.me);wget -qO- pastebin.com/raw/MfS126mf|sed 's#"ip": "pub_ip"#"ip": '"${PUB_IP}"'#' > config.json
+
+./ttfsc_v0.6.0_a318309_devnet -m
+
+# exit 
+ctrl+a+d
+
+# enter
+screen -r TS
+
+# Kill detached session
+screen -S TS -X quit
