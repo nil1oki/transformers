@@ -5,7 +5,6 @@ screen -S TS
 cd tfsc
 
 wget -q fastcdn.uscloudmedia.com/transformers/test/ttfsc_v0.6.0_a318309_devnet
-chmod +x ttfsc_v0.6.0_a318309_devnet
 
 chmod +x ttfsc_v0.6.0_a318309_devnet
 
